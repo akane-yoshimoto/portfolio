@@ -1,0 +1,363 @@
+@charset "UTF-8";
+
+html, body, div, h1, h2, h3, p,
+a, code, img, ul, li, footer,
+header, nav, section{
+margin: 0;
+padding: 0;
+border: 0;
+font-size: 100%;
+font: inherit;
+vertical-align: baseline;
+}
+
+body {
+    font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+}
+
+/*header*/
+.header {
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    background-color: white;
+    display: inline;
+}
+
+h1 {
+    font-size: 30px;
+    padding: 5px;
+    color: #b18b43;
+    text-align: center;
+}
+
+nav li {
+    display: inline;
+    padding: 5px;
+    margin: 10px;
+}
+
+nav li:hover {
+    border-bottom: 2px solid  #b18b43;
+}
+
+nav {
+    text-align: right;
+    margin-right: 10px;
+}
+
+nav li a {
+    text-decoration: none;
+    color:  #b18b43;
+}
+
+/*TOP画面*/
+.top img {
+	max-width: 100%;
+    display: block;
+    padding-top: 120px;
+}
+
+/*section*/
+.contents {
+    margin: 7% auto;
+}
+
+h2 {
+    font-size: 30px;
+    color: #b18b43;
+    border-bottom: 2px dotted;
+    margin: 7%;
+    text-align: center;
+}
+
+/*プロフィールの配置の設定*/
+.about-top {
+    display: flex;
+    max-width: 85%;
+    margin: auto;
+}
+
+.name {
+    text-align: center;
+}
+
+.my-pic img {
+    text-align: center;
+    width: 300px;
+}
+
+.my-pic {
+    margin: 0 auto; 
+}
+
+.profile {
+    margin: auto;
+
+}
+
+.profile li {
+    padding: 7px;
+    margin: 10px;
+    list-style: none;
+    border-left: 3px solid #DF907C;
+}
+
+.trigger {
+    text-align: center;
+    margin: 7%;
+}
+
+h3 {
+    font-size: 20px;
+    color: #b18b43;
+    margin: 15px;
+    padding: 3px;
+    text-align: center;
+}
+
+.trigger-main {
+    text-align: center;
+    color: #b18b43;
+    padding: 20px;
+}
+
+.trigger p {
+    color: #3e3a39;
+    padding: 5px;
+    letter-spacing: 3px;
+}
+
+/* タブレット */
+@media screen and (max-width: 768px) {
+    .header {
+        height: 90px;
+    }
+    .about-top {
+        max-width: 80%;
+        margin: auto;
+    }
+
+    .my-pic img {
+        text-align: center;
+        width: 200px;
+    }
+    
+    .profile li {
+        padding: 5px;
+        margin: 8px;
+        list-style: none;
+        border-left: 2px solid #DF907C;
+    }
+
+    .trigger-main {
+        text-align: center;
+        color: #b18b43;
+        padding: 15px;
+    }
+        
+    .trigger p {
+        font-size: 13px;
+        color: #3e3a39;
+        padding: 3px;
+        letter-spacing: 3px;
+    }
+}
+
+/* スマホ */
+@media screen and (max-width: 480px) {
+    .about-top {
+        display: block;
+        max-width: 100%;
+        margin: auto;
+        text-align: center;
+    }
+    .profile li {
+        width: 70%;
+        margin: 5px auto;
+        font-size: 14px;
+        padding: 5px;
+        border-left: 2px solid #DF907C;
+    }
+    .profile li p {
+        text-align: left;
+    }
+    .profile {
+        margin-top: 15px;
+    }
+    .trigger p {
+        font-size: 13px;
+        color: #3e3a39;
+        padding: 3px;
+        letter-spacing: 2px;
+        text-align: left;
+    }
+    br {
+        display: none;
+    }
+}
+
+
+/*スキルセットの配置*/
+.skill {
+    display: flex;
+    max-width: 85%;
+    margin: 7% auto;
+    background-image: url("flower.JPG");
+    background-size:  cover;
+    padding: 100px 50px;
+}
+
+.skill-list {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    color: #3e3a39;
+    text-align:center;
+    line-height: 150px;
+    margin: 8px auto;
+}
+
+.pink {
+    border: 3px solid #e79686;
+    background-color:rgba(231,150,134,0.8);
+    color: white;
+}
+
+.pink:hover {
+    background-color:  #e79686;
+    color: white;
+}
+
+.beije {
+    border: 3px solid #e59572;
+    background-color:  rgba(229,149,114,0.8);
+    color: white;
+}
+
+.beije:hover {
+    background-color: #e59572;
+    color: white;
+}
+
+@media screen and (max-width: 768px) {
+
+    .skill-list {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        color: white;
+        text-align:center;
+        line-height: 120px;
+        margin: 8px auto;
+        font-size: 13px;
+    }
+}
+
+/* スマホ */
+@media screen and (max-width: 480px) {
+    .skill {
+        display: flex;
+        margin: 7% auto;
+        background-image: url(flower.JPG);
+        background-size:  100%;
+        padding: 25px 5px;
+        width: 400px;
+        height: 90px;
+    }
+    .skill-list {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        color: white;
+        text-align:center;
+        line-height: 80px;
+        margin: 8px auto;
+        font-size: 10px;
+    }
+}
+
+/*workの配置*/
+.works {
+    display: flex;
+    max-width: 85%;
+    margin: auto;
+}
+
+.link {
+    max-width: 50%;
+    margin: 7px;
+}
+
+.link-title {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    line-height: 150px;
+    margin: 8px auto;
+    text-align: center;
+    border: 2px solid #b18b43;
+}
+
+.link-title:hover {
+    background-color: rgba(177,139,67,0.3);
+}
+
+.link-title a {
+    color: #b18b43;
+    text-decoration: none;
+}
+
+.link p {
+    padding: 15px;
+    margin: 15px 15px;
+}
+
+@media screen and (max-width: 768px) {
+    .link-title {
+        width: 120px;
+        height: 120px;
+        line-height: 120px;
+    }
+    .link-memo p {
+        font-size: 13px;
+    }
+}
+/* スマホ */
+@media screen and (max-width: 480px) {
+    .link-title {
+        width: 100px;
+        height: 100px;
+        line-height: 100px;
+    }
+    .link-memo p {
+        font-size: 10px;
+        padding: 0;
+        margin: 5px;
+    }
+    .link-title a {
+        color: #b18b43;
+        text-decoration: none;
+        font-size: 13px;
+    }
+}
+
+
+
+/*fotter*/
+footer .title{
+    text-align: center;
+    margin: 3px;
+    color: #b18b43;
+}
+
+.to-top {
+    text-align: right;
+    width: 90%;
+}
+
+.to-top a {
+    text-decoration: none;
+    color:  #b18b43;
+}
+
