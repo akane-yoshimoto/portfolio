@@ -166,6 +166,10 @@ h3 {
 
 /* スマホ */
 @media screen and (max-width: 480px) {
+    nav {
+        text-align: center;
+    }
+
     .about-top {
         display: block;
         max-width: 100%;
@@ -263,17 +267,33 @@ h3 {
         background-size:  100%;
         padding: 25px 5px;
         width: 400px;
-        height: 90px;
+        height:78px;
     }
     .skill-list {
-        width: 80px;
-        height: 80px;
+        width: 75px;
+        height: 70px;
         border-radius: 50%;
         color: white;
         text-align:center;
-        line-height: 80px;
+        line-height: 70px;
         margin: 8px auto;
         font-size: 10px;
+    }
+
+    .JS {
+        font-size: 0;
+    }
+    .JS:before {
+        font-size: 10px;
+        content: "JS/jQuery";
+    }
+
+    .C {
+        font-size: 0;
+    }
+    .C:before {
+        font-size: 10px;
+        content: "C(学生時代)";
     }
 }
 
@@ -285,7 +305,7 @@ h3 {
 }
 
 .link {
-    max-width: 50%;
+    width: 50%;
     margin: 7px;
 }
 
@@ -341,8 +361,6 @@ h3 {
         font-size: 13px;
     }
 }
-
-
 
 /*fotter*/
 footer .title{
