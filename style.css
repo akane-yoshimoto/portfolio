@@ -244,6 +244,7 @@ h3 {
     color: white;
 }
 
+/* タブレット */
 @media screen and (max-width: 768px) {
 
     .skill-list {
@@ -333,6 +334,7 @@ h3 {
     margin: 15px 15px;
 }
 
+/* タブレット */
 @media screen and (max-width: 768px) {
     .link-title {
         width: 120px;
