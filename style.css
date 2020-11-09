@@ -223,7 +223,6 @@ h3 {
 }
 
 .pink {
-    border: 3px solid #e79686;
     background-color:rgba(231,150,134,0.8);
     color: white;
 }
@@ -234,7 +233,6 @@ h3 {
 }
 
 .beije {
-    border: 3px solid #e59572;
     background-color:  rgba(229,149,114,0.8);
     color: white;
 }
